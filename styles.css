@@ -1,0 +1,133 @@
+body {
+    font-family: 'Roboto', sans-serif; /* Современный шрифт */
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px; /* Увеличенная ширина контейнера */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.bmw {
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 20px; /* Более округлые углы */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bmw:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 4em; /* Увеличенный размер заголовка */
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px; /* Более округлые углы */
+    border: 4px solid #0077cc; /* Яркая граница */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 119, 204, 0.4); /* Тень при наведении */
+}
+
+h2 {
+    color: #0077cc;
+    margin-top: 30px;
+    font-size: 3em; /* Увеличенный размер заголовка */
+    border-bottom: 4px solid #0077cc; /* Более выразительная линия */
+    padding-bottom: 10px;
+}
+
+.specs {
+    margin-top: 30px;
+}
+
+.spec-item {
+    margin-bottom: 30px;
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 15px; /* Более округлые углы */
+    background-color: #f9f9f9;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.spec-item:hover {
+    background-color: #e3f2fd;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Легкая тень при наведении */
+}
+
+.spec-item h3 {
+    color: #34495e;
+    font-size: 2em; /* Увеличенный размер заголовка */
+    margin-bottom: 10px;
+}
+
+.spec-item p {
+    color: #666;
+    line-height: 1.8; /* Улучшенная читаемость */
+}
+
+h4 {
+    color: #555;
+    font-size: 1.6em; /* Увеличенный размер заголовка */
+}
+
+h5 {
+    margin-top: 20px;
+    color: #333;
+    font-size: 1.5em; /* Увеличенный размер заголовка */
+    text-decoration: underline;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #0077cc;
+    color: #fff;
+    border-radius: 25px; /* Округлые кнопки */
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #005fa3; /* Темнее при наведении */
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .bmw {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2.5em; /* Уменьшенный размер заголовка на мобильных устройствах */
+    }
+
+    h2, h3, h4, h5 {
+        font-size: 1.5em; /* Уменьшенный размер заголовка на мобильных устройствах */
+    }
+
+    img {
+        border: 3px solid #0077cc; /* Уменьшенная граница на мобильных устройствах */
+    }
+}
